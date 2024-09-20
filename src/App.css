@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sofadi+One&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav-div{
+  padding-left: 6%;
+  padding-right: 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul{
+  display: flex;
+  align-items: center;
+  gap: 12%;
+  justify-content: center;
+}
+li{
+  /* padding-right: 8%; */
+  list-style: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  width: max-content;
+  cursor: pointer;
+  position: relative;
+  /* margin: 100px auto; */
+}
+li::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  background-color: #ca1515;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scale(0);
+}
+li:hover::after{
+  transform: scale(1);
+
+}
+.icon-div{
+  display: flex;
+  /* gap: 6%; */
+  width: 12%;
+}
+ .icon-div i{
+  padding-left: 8%;
+}
+.icon-div button{
+  border: none;
+  background: transparent;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+}
+.body-div{
+  display: flex;
+  width: 100%;
+  display: flex;
+  /* background-color: red; */
+  /* justify-content: space-between; */
+}
+.body-1 {
+  margin-top: -10%;
+  position: relative;
+  background-image: url(https://preview.colorlib.com/theme/ashion/img/categories/category-1.jpg.webp);
+  background-repeat: no-repeat;
+  width: 51%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content:start;
+  flex-direction: column;
+  text-wrap: balance;
+  /* background-color: orange; */
+}
+.body-1 h1, .body-1 p{
+  padding-left: 10%;
+
+}
+.body-1 h1{
+  padding-top: 20%;
+  font-family: "Cookie", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+}
+.body-1 p{
+  margin-top:  -4%;
+  font-size: 16px;
+  color: #666666;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.shop{
+  cursor: pointer;
+  width: 11%;
+  /* padding: 0 1%; */
+  background: transparent;
+  border: none;
+  margin-left: 9.5%;
+  font-family: "Sofadi One", system-ui;
+  font-weight: 600;
+  font-style: normal;
+  border-bottom: solid 2px #ca1515;
+}
+.body-2{
+  /* display: flex; */
+  width: 48.5%;
+  justify-content: space-between;
+  margin-left: 0.5%;
+}
+.pic-div-1, .pic-div-2{
+  display: flex;
+  /* background-image: url(images/category-2.jpg); */
+  justify-content: space-between;
+  width: 100%;
+  height: 45vh;
+
+}
+.pic-1{
+  background-image: url(https://preview.colorlib.com/theme/ashion/img/categories/category-2.jpg.webp);
+  background-repeat: no-repeat;
+  width: 49%;
+  position: relative;
+  height: 45vh;
+}
+.pic-1 h1, .pic-2 h1, .pic-3 h1, .pic-4 h1{
+  margin-left: 3%;
+  margin-top: 25%;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.pic-1 p, .pic-2 p, .pic-3 p, .pic-4 p{
+  margin-left: 3%;
+  color: #666666;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: -6%;
+  /* margin-bottom: 2%; */
+
+}
+.shop-1{
+  cursor: pointer;
+  width: 25%;
+  /* padding: 0 1%; */
+  background: transparent;
+  border: none;
+  margin-left: 1%;
+  font-family: "Sofadi One", system-ui;
+  font-weight: 600;
+  font-style: normal;
+  border-bottom: solid 2px #ca1515;
+}
+.pic-2{
+  background-image: url(https://preview.colorlib.com/theme/ashion/img/categories/category-3.jpg.webp);
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 45vh;
+  position: relative;
+}
+.pic-3{
+  background-image: url(https://preview.colorlib.com/theme/ashion/img/categories/category-4.jpg.webp);
+  background-repeat: no-repeat;
+  width: 49%;
+  height: 42.3vh;
+  position: relative;
+}
+.pic-4{
+  background-image: url(https://preview.colorlib.com/theme/ashion/img/categories/category-5.jpg.webp);
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 42.3vh;
+  position: relative;
+}
+
+/* Footer */
+/*
+ * Preparing stage
+ */
+ html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+/*
+ * Start
+ */
+.glassBox {
+  width: 100%;
+  height: 400px;
+  max-width: 300px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.glassBox, .glassBox * {
+  box-sizing: border-box;
+  transition: 400ms;
+}
+.glassBox__imgBox img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.glassBox__title {
+  text-align: center;
+  margin-top: 15px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Lato";
+  color: #000;
+}
+.glassBox__content {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Lato";
+  letter-spacing: 0.1em;
+  opacity: 0;
+}
+.glassBox:hover .glassBox__imgBox {
+  transform: translateY(-50px);
+}
+.glassBox:hover .glassBox__imgBox img {
+  transform: translate(-20px, -40px) rotate(-15deg) scale(1.4);
+}
+.card-section{
+  display: flex;
+  justify-content: space-evenly ;
+  align-items: center;
+  width: 100%;
+}
+
+.glassBox {
+  /* filter: drop-shadow(1px 1px 20px #000); */
+  /* background-color: red; */
+  background-color: #fff0fc;
+  color: black;
+}
+.product{
+  text-align: center;
+  padding: 1% 0;
+  font-family: "cookie",cursive;
+  font-size: 65px;
+}
